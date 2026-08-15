@@ -1,0 +1,204 @@
+[
+  {
+    "id": "P001",
+    "name": "Invoice-to-Cash",
+    "owner": "Finance Operations",
+    "department": "Finance",
+    "purpose": "Manage the end-to-end process of customer billing, invoice generation, payment collection, and dispute resolution.",
+    "description": "Invoice-to-Cash covers activities from customer order fulfilment through invoicing and payment receipt.",
+    "activities": [
+      "Create customer invoice",
+      "Validate invoice details",
+      "Send invoice to customer",
+      "Receive customer payment",
+      "Handle payment disputes"
+    ],
+    "inputs": [
+      "Customer order",
+      "Billing information",
+      "Payment terms"
+    ],
+    "outputs": [
+      "Processed invoice",
+      "Customer payment",
+      "Resolved disputes"
+    ],
+    "kpis": [
+      "Days Sales Outstanding (DSO)",
+      "Invoice accuracy",
+      "Payment cycle time"
+    ],
+    "automation_candidates": [
+      "Automated invoice generation",
+      "Payment reminder automation",
+      "AI-based dispute classification"
+    ],
+    "related_processes": [
+      "Order-to-Cash",
+      "Customer Master Data Management"
+    ]
+  },
+
+
+  {
+    "id": "P002",
+    "name": "Procure-to-Pay",
+    "owner": "Procurement Operations",
+    "department": "Procurement",
+    "purpose": "Manage the purchasing lifecycle from supplier request to invoice payment.",
+    "description": "Procure-to-Pay manages sourcing, purchasing, goods receipt, invoice verification, and supplier payment.",
+    "activities": [
+      "Create purchase requisition",
+      "Approve purchase order",
+      "Receive goods",
+      "Verify invoice",
+      "Pay supplier"
+    ],
+    "inputs": [
+      "Purchase request",
+      "Supplier information"
+    ],
+    "outputs": [
+      "Approved purchase order",
+      "Supplier payment"
+    ],
+    "kpis": [
+      "Purchase order cycle time",
+      "Invoice processing time"
+    ],
+    "automation_candidates": [
+      "Purchase order approval workflow",
+      "Invoice matching automation"
+    ],
+    "related_processes": [
+      "Supplier Management",
+      "Accounts Payable"
+    ]
+  },
+
+
+  {
+    "id": "P003",
+    "name": "Hire-to-Retire",
+    "owner": "Human Resources Operations",
+    "department": "Human Resources",
+    "purpose": "Manage the complete employee lifecycle from hiring to retirement.",
+    "description": "Hire-to-Retire covers recruitment, onboarding, employee development, payroll management, and employee exit activities.",
+    "activities": [
+      "Create job requisition",
+      "Recruit and select candidates",
+      "Onboard new employees",
+      "Manage employee information",
+      "Support employee development",
+      "Process employee exit and retirement"
+    ],
+    "inputs": [
+      "Workforce requirements",
+      "Candidate information",
+      "Employee data"
+    ],
+    "outputs": [
+      "Hired employee",
+      "Updated employee records",
+      "Completed retirement process"
+    ],
+    "kpis": [
+      "Time to hire",
+      "Employee retention rate",
+      "Employee lifecycle completion time"
+    ],
+    "automation_candidates": [
+      "Automated candidate screening",
+      "Digital onboarding workflows",
+      "Employee self-service automation"
+    ],
+    "related_processes": [
+      "Talent Management",
+      "Payroll Management"
+    ]
+  },
+
+
+  {
+    "id": "P004",
+    "name": "Order-to-Invoice",
+    "owner": "Order Management Operations",
+    "department": "Sales Operations",
+    "purpose": "Manage the process from receiving customer orders through invoice creation.",
+    "description": "Order-to-Invoice covers order capture, validation, fulfilment coordination, delivery confirmation, and invoice generation.",
+    "activities": [
+      "Receive customer order",
+      "Validate order details",
+      "Check availability",
+      "Process order fulfilment",
+      "Generate customer invoice"
+    ],
+    "inputs": [
+      "Customer order",
+      "Product information",
+      "Pricing details"
+    ],
+    "outputs": [
+      "Confirmed customer order",
+      "Delivered product",
+      "Customer invoice"
+    ],
+    "kpis": [
+      "Order processing time",
+      "Order accuracy",
+      "Invoice cycle time"
+    ],
+    "automation_candidates": [
+      "Automated order validation",
+      "Order status notifications",
+      "Invoice automation"
+    ],
+    "related_processes": [
+      "Invoice-to-Cash",
+      "Customer Management"
+    ]
+  },
+
+
+  {
+    "id": "P005",
+    "name": "Source-to-Pay",
+    "owner": "Strategic Procurement",
+    "department": "Procurement",
+    "purpose": "Manage the complete procurement lifecycle from sourcing suppliers to supplier payment.",
+    "description": "Source-to-Pay covers supplier identification, sourcing, contracting, purchasing, invoice processing, and payment activities.",
+    "activities": [
+      "Identify sourcing requirements",
+      "Select and evaluate suppliers",
+      "Negotiate contracts",
+      "Create purchase orders",
+      "Receive goods or services",
+      "Process supplier invoices",
+      "Make supplier payments"
+    ],
+    "inputs": [
+      "Business requirements",
+      "Supplier information",
+      "Purchase requirements"
+    ],
+    "outputs": [
+      "Selected supplier",
+      "Purchase contract",
+      "Supplier payment"
+    ],
+    "kpis": [
+      "Supplier performance",
+      "Procurement cycle time",
+      "Cost savings achieved"
+    ],
+    "automation_candidates": [
+      "Supplier evaluation automation",
+      "Contract management automation",
+      "Invoice processing automation"
+    ],
+    "related_processes": [
+      "Procure-to-Pay",
+      "Supplier Management"
+    ]
+  }
+]

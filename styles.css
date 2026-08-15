@@ -1,0 +1,826 @@
+/* =========================================================
+   BPM / PROCESS MINING APP
+   DARK • COLOURFUL • HIGH CONTRAST • READABLE
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(124, 58, 237, 0.18), transparent 28%),
+        radial-gradient(circle at 90% 20%, rgba(37, 99, 235, 0.16), transparent 25%),
+        radial-gradient(circle at 50% 100%, rgba(13, 148, 136, 0.12), transparent 30%),
+        #0b1120;
+
+    color: #f8fafc;
+}
+
+.block-container {
+    max-width: 1250px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+/* =========================================================
+   MAIN HEADINGS
+========================================================= */
+
+.main-title {
+    font-size: 44px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+}
+
+.sub-title {
+    font-size: 17px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+
+/* =========================================================
+   GENERAL CARD
+========================================================= */
+
+.card {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(30, 41, 59, 0.96),
+            rgba(15, 23, 42, 0.96)
+        );
+
+    padding: 24px;
+
+    border-radius: 18px;
+
+    border: 1px solid #334155;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.28);
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.stButton > button {
+    width: 100%;
+    min-height: 46px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b5cf6,
+            #6366f1
+        ) !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #a78bfa !important;
+
+    border-radius: 11px !important;
+
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 7px 20px rgba(99, 102, 241, 0.30);
+
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #a78bfa,
+            #818cf8
+        ) !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(99, 102, 241, 0.45);
+}
+
+
+/* =========================================================
+   TEXT AREA
+========================================================= */
+
+textarea {
+    background: #111827 !important;
+    color: #f8fafc !important;
+
+    border: 1px solid #475569 !important;
+
+    border-radius: 11px !important;
+
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+}
+
+textarea::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1 !important;
+}
+
+textarea:focus {
+    border-color: #8b5cf6 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(139, 92, 246, 0.25) !important;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+input {
+    background: #111827 !important;
+    color: #f8fafc !important;
+
+    border: 1px solid #475569 !important;
+
+    border-radius: 10px !important;
+}
+
+input::placeholder {
+    color: #94a3b8 !important;
+}
+
+
+/* =========================================================
+   FILE UPLOADER
+========================================================= */
+
+[data-testid="stFileUploader"] {
+    background:
+        linear-gradient(
+            135deg,
+            #172033,
+            #111827
+        ) !important;
+
+    border: 2px dashed #8b5cf6 !important;
+
+    border-radius: 18px !important;
+
+    padding: 14px !important;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.22);
+}
+
+
+/* Dropzone */
+
+[data-testid="stFileUploaderDropzone"] {
+    background:
+        linear-gradient(
+            135deg,
+            #1e293b,
+            #172033
+        ) !important;
+
+    border: none !important;
+
+    border-radius: 13px !important;
+
+    color: #f8fafc !important;
+}
+
+
+/* Everything inside */
+
+[data-testid="stFileUploaderDropzone"] * {
+    color: #e2e8f0 !important;
+}
+
+
+/* Main dropzone text */
+
+[data-testid="stFileUploaderDropzone"] span {
+    color: #f1f5f9 !important;
+    font-weight: 500 !important;
+}
+
+
+/* Small text */
+
+[data-testid="stFileUploaderDropzone"] small {
+    color: #94a3b8 !important;
+}
+
+
+/* Upload button */
+
+[data-testid="stFileUploaderDropzone"] button {
+    background:
+        linear-gradient(
+            135deg,
+            #8b5cf6,
+            #6366f1
+        ) !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #a78bfa !important;
+
+    border-radius: 10px !important;
+
+    font-weight: 700 !important;
+
+    padding: 9px 20px !important;
+
+    box-shadow:
+        0 5px 15px rgba(99, 102, 241, 0.30);
+}
+
+
+/* Upload button text */
+
+[data-testid="stFileUploaderDropzone"] button span {
+    color: #ffffff !important;
+}
+
+
+/* Upload hover */
+
+[data-testid="stFileUploaderDropzone"] button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #a78bfa,
+            #818cf8
+        ) !important;
+
+    color: #ffffff !important;
+}
+
+
+/* Upload icon */
+
+[data-testid="stFileUploaderDropzone"] svg {
+    color: #c4b5fd !important;
+}
+
+
+/* Uploader label */
+
+[data-testid="stFileUploader"] label {
+    color: #f1f5f9 !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* Help text */
+
+[data-testid="stFileUploader"] small {
+    color: #94a3b8 !important;
+}
+
+
+/* Uploaded file name */
+
+[data-testid="stFileUploaderFileName"] {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   PROCESS MINING SECTION
+========================================================= */
+
+.mining-card {
+    background:
+        linear-gradient(
+            135deg,
+            #1e1b4b,
+            #172554,
+            #0f172a
+        );
+
+    border: 1px solid #6366f1;
+
+    border-top: 5px solid #a78bfa;
+
+    border-radius: 18px;
+
+    padding: 26px;
+
+    margin-top: 20px;
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(79, 70, 229, 0.25);
+}
+
+.mining-title {
+    font-size: 26px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    margin-bottom: 5px;
+}
+
+.mining-subtitle {
+    font-size: 15px;
+
+    color: #cbd5e1;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   MINING METRICS
+========================================================= */
+
+.mining-metric {
+    background:
+        linear-gradient(
+            145deg,
+            #1e293b,
+            #111827
+        );
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #334155;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.22);
+}
+
+.mining-metric.events {
+    border-top: 4px solid #3b82f6;
+}
+
+.mining-metric.cases {
+    border-top: 4px solid #14b8a6;
+}
+
+.mining-metric.duration {
+    border-top: 4px solid #f59e0b;
+}
+
+.mining-metric.bottleneck {
+    border-top: 4px solid #f43f5e;
+}
+
+.mining-number {
+    font-size: 29px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+.mining-label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   ANALYSIS CARDS
+========================================================= */
+
+.analysis-card {
+    background:
+        linear-gradient(
+            135deg,
+            #1e293b,
+            #111827
+        );
+
+    padding: 19px 21px;
+
+    border-radius: 13px;
+
+    margin-top: 12px;
+
+    border: 1px solid #334155;
+
+    border-left: 5px solid;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.20);
+}
+
+.analysis-card.bottleneck {
+    border-left-color: #fb7185;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3f1724,
+            #1f1720
+        );
+}
+
+.analysis-card.performance {
+    border-left-color: #60a5fa;
+
+    background:
+        linear-gradient(
+            135deg,
+            #172554,
+            #172033
+        );
+}
+
+.analysis-card.anomaly {
+    border-left-color: #fbbf24;
+
+    background:
+        linear-gradient(
+            135deg,
+            #422006,
+            #1f1720
+        );
+}
+
+.analysis-card.recommendation {
+    border-left-color: #34d399;
+
+    background:
+        linear-gradient(
+            135deg,
+            #064e3b,
+            #10231e
+        );
+}
+
+
+/* Make analysis text readable */
+
+.analysis-card h1,
+.analysis-card h2,
+.analysis-card h3,
+.analysis-card h4 {
+    color: #ffffff !important;
+}
+
+.analysis-card p,
+.analysis-card span,
+.analysis-card div,
+.analysis-card li {
+    color: #e2e8f0 !important;
+}
+
+
+/* =========================================================
+   SUCCESS CARD
+========================================================= */
+
+.success-card {
+    background:
+        linear-gradient(
+            135deg,
+            #064e3b,
+            #022c22
+        );
+
+    border: 1px solid #10b981;
+
+    border-left: 5px solid #34d399;
+
+    padding: 16px 18px;
+
+    border-radius: 13px;
+
+    color: #d1fae5;
+
+    margin-bottom: 15px;
+}
+
+.success-card * {
+    color: #d1fae5 !important;
+}
+
+
+/* =========================================================
+   PLAN CARD
+========================================================= */
+
+.plan-card {
+    background:
+        linear-gradient(
+            135deg,
+            #1e3a8a,
+            #172554
+        );
+
+    border: 1px solid #3b82f6;
+
+    border-left: 5px solid #60a5fa;
+
+    padding: 18px;
+
+    border-radius: 13px;
+
+    color: #dbeafe;
+
+    margin-bottom: 18px;
+}
+
+.plan-card * {
+    color: #dbeafe !important;
+}
+
+
+/* =========================================================
+   METRIC CARDS
+========================================================= */
+
+.metric-card {
+    background:
+        linear-gradient(
+            145deg,
+            #1e293b,
+            #111827
+        );
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #334155;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.22);
+}
+
+.metric-card h1,
+.metric-card h2,
+.metric-card h3,
+.metric-card h4 {
+    color: #ffffff !important;
+}
+
+.metric-card p,
+.metric-card span {
+    color: #cbd5e1 !important;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+[data-testid="stSidebar"] {
+    background:
+        linear-gradient(
+            180deg,
+            #111827,
+            #1e1b4b,
+            #172554
+        ) !important;
+
+    border-right: 1px solid #3730a3;
+}
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label {
+    color: #e2e8f0 !important;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #ffffff !important;
+}
+
+
+/* Sidebar inputs */
+
+[data-testid="stSidebar"] input {
+    background: #111827 !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #475569 !important;
+}
+
+
+/* =========================================================
+   SELECT BOX
+========================================================= */
+
+div[data-baseweb="select"] > div {
+    background: #111827 !important;
+
+    border: 1px solid #475569 !important;
+
+    border-radius: 10px !important;
+
+    color: #f8fafc !important;
+}
+
+div[data-baseweb="select"] span {
+    color: #f8fafc !important;
+}
+
+
+/* Dropdown menu */
+
+div[role="listbox"] {
+    background: #1e293b !important;
+
+    border: 1px solid #475569 !important;
+}
+
+div[role="option"] {
+    background: #1e293b !important;
+
+    color: #f8fafc !important;
+}
+
+div[role="option"]:hover {
+    background: #3730a3 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   EXPANDER
+========================================================= */
+
+.streamlit-expanderHeader {
+    background:
+        linear-gradient(
+            135deg,
+            #1e293b,
+            #111827
+        ) !important;
+
+    border: 1px solid #334155;
+
+    border-radius: 11px;
+
+    color: #ffffff !important;
+
+    font-weight: 600;
+}
+
+.streamlit-expanderContent {
+    background: #111827 !important;
+
+    border: 1px solid #334155 !important;
+
+    color: #e2e8f0 !important;
+}
+
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+}
+
+
+/* =========================================================
+   DATAFRAME
+========================================================= */
+
+[data-testid="stDataFrame"] {
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    border: 1px solid #334155;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+    color: #a78bfa;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+a:hover {
+    color: #67e8f9;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #334155;
+
+    margin: 25px 0;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-title {
+        font-size: 34px;
+    }
+
+    .sub-title {
+        font-size: 15px;
+    }
+
+    .card,
+    .mining-card {
+        padding: 18px;
+    }
+
+    .mining-number {
+        font-size: 24px;
+    }
+}
